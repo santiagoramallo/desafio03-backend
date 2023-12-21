@@ -5,7 +5,7 @@ const ProductManager = require("./product-manager.js");
 const manager = new ProductManager("./products.json");
 
 app.listen(PUERTO, () => {
-    console.log('Escuchando en http://localhost:${PUERTO}');
+    console.log('Escuchando en http://localhost:PUERTO');
   });
 
 app.get("/", (req, res) => {
